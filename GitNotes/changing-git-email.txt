@@ -1,0 +1,4 @@
+git config --global user.email dhurbag21@gmail.com
+to confirm if the email is set correctly, check config --global user.email
+
+https://docs.github.com/en/enterprise/2.13/user/articles/setting-your-commit-email-address-in-git
