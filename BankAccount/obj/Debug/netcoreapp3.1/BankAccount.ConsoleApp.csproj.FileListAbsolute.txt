@@ -1,0 +1,13 @@
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\bin\Debug\netcoreapp3.1\BankAccount.ConsoleApp.exe
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\bin\Debug\netcoreapp3.1\BankAccount.ConsoleApp.deps.json
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\bin\Debug\netcoreapp3.1\BankAccount.ConsoleApp.runtimeconfig.json
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\bin\Debug\netcoreapp3.1\BankAccount.ConsoleApp.runtimeconfig.dev.json
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\bin\Debug\netcoreapp3.1\BankAccount.ConsoleApp.dll
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\bin\Debug\netcoreapp3.1\BankAccount.ConsoleApp.pdb
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\obj\Debug\netcoreapp3.1\BankAccount.ConsoleApp.csprojAssemblyReference.cache
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\obj\Debug\netcoreapp3.1\BankAccount.ConsoleApp.AssemblyInfoInputs.cache
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\obj\Debug\netcoreapp3.1\BankAccount.ConsoleApp.AssemblyInfo.cs
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\obj\Debug\netcoreapp3.1\BankAccount.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\obj\Debug\netcoreapp3.1\BankAccount.ConsoleApp.dll
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\obj\Debug\netcoreapp3.1\BankAccount.ConsoleApp.pdb
+C:\Git-PracticeCoding\PracticeCoding\BankAccount\obj\Debug\netcoreapp3.1\BankAccount.ConsoleApp.genruntimeconfig.cache
