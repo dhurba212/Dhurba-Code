@@ -1,0 +1,22 @@
+1) invalidOperationException
+
+	if(totalBalance-Withdraw.amount<0)
+		{
+			throw new InvalidOperationException("Cannot withdraw more than the total balance");
+		}
+
+	try
+		{
+			//code
+		}
+	catch(InvalidOperationException e)
+		{
+			Console.WriteLine(e.Message);
+		}
+
+2)ArgumentOutOfRangeException
+
+	if(Deposit.amount<0)
+	{
+		throw new ArgumentOutOfRangeException("Parameter","This message gets printed")
+	}

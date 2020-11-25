@@ -15,17 +15,45 @@ namespace BankAccount.ConsoleApp
             //opening a bank account which needs two parameter, name-string and initialTransaction-Transaction
             OpenAccount dhurbaAccount = new OpenAccount("Dhurba", initialTransaction);
             //Once the account is created, making a deposit which takes 1 parameter-transaction
-            dhurbaAccount.Deposit(new Transaction(500.50m, "salary"));
+            try
+            {
+                dhurbaAccount.Deposit(new Transaction(500.50m, "salary"));
+            }
+            catch(ArgumentOutOfRangeException e)
+            {
+               Console.WriteLine( e.Message);
+            }
             Console.WriteLine($"\n");
             //Making a withdrawl which takes one parameter-Transaction
-            dhurbaAccount.Withdrawl(new Transaction(200.50m, "Rent"));
+            try
+            {
+                dhurbaAccount.Withdrawl(new Transaction(-5000.50m, "Rent"));
+            }
+            catch(ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+                
+
+            }
+            catch(InvalidOperationException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
 
 
             //Creating another account for Sangita and making deposit as well.
             Transaction initialDepositSangita = new Transaction(500.5m, "initial Deposit");
             OpenAccount sangitaAccount=new OpenAccount("sangita",initialDepositSangita);
-            
-            sangitaAccount.Deposit(new Transaction(500.1m, "salary"));
+
+            try
+            {
+                sangitaAccount.Deposit(new Transaction(500.1m, "salary"));
+            }
+            catch(ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+            }
 
             Console.WriteLine(sangitaAccount.GetTotalBalance());
 

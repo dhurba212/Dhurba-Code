@@ -7,7 +7,7 @@ namespace BankAccount.ConsoleApp
     public class OpenAccount
     {
         //List of Initial Deposit which is done during AccountOpening, and all the withdrawl and deposits
-        private List<Transaction> TransactionList = new List<Transaction>();
+        public List<Transaction> TransactionList = new List<Transaction>();
         //Generate account number, Increase by 1 number for every new customer. Static will keep the change
         //if it wasnt static, everytime i would open a new bank account it would go back to same string "123456".
         private static string accountNumberGenerator = "123456";
@@ -43,6 +43,10 @@ namespace BankAccount.ConsoleApp
 
         public void Deposit(Transaction deposit)
         {
+            if (deposit.Amount < 0)
+            {
+                throw new ArgumentOutOfRangeException("Deposit amount can't be negative");
+            }
             //each transaction is added to the list of transaction
             TransactionList.Add(deposit);
             //Display Previous Balance before adding the deposited amount to the total balance
@@ -55,18 +59,29 @@ namespace BankAccount.ConsoleApp
         public void Withdrawl(Transaction withdrawl)
         {
             //Making sure the withdrawl amount is less than the total balance with if-else statement
-            if (withdrawl.Amount < TotalBalance)
+            if ( TotalBalance - withdrawl.Amount <0)
             {
+                throw new InvalidOperationException($"Withdrawl amount:{withdrawl.Amount} cannot be more than the Total Balance:{TotalBalance}");
+                //Console.WriteLine($"Your Total balance is {TotalBalance}, So u cannot withdraw {withdrawl.Amount}");
+            }
+             if (withdrawl.Amount < 0)
+            {
+                throw new ArgumentOutOfRangeException($"{withdrawl.Amount}","Withdrawl amount can't be negative.");
+                
+            }
+            
+            
                 TransactionList.Add(withdrawl);
                 Console.WriteLine($"Previous Balance:{TotalBalance}");
                 TotalBalance -= withdrawl.Amount;
                 Console.WriteLine($"Account Number:{AccountNumber}\nWithdrawn Amount:{withdrawl.Amount}\nTotal Balance: {TotalBalance:c}\n Date:{withdrawl.Date}\n Note:{withdrawl.Note}\n");
-                    
-            }
-            else
-            {
-                Console.WriteLine($"Your Total balance is {TotalBalance}, So u cannot withdraw {withdrawl.Amount}");
-            }
+
+            
+
+
+
+           
+            
             
         }
         //Since the method is private, it cannot be accessed from outside this class. 
