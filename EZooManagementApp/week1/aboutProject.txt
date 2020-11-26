@@ -1,0 +1,7 @@
+It is a Zoo Management App.
+The app is already made, we need to add a functionality
+	-feeding schedule for each zoo animal type
+		-expand the data being tracked to include feeding schedules
+		-modify the database to support new data
+		-Writing code to store and retrieve this information and display to user
+		-User will be able to manipulate information through online interface

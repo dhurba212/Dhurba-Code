@@ -1,0 +1,17 @@
+3 types of variables
+	1-Instance Variable:
+		one that is declared inside the class but outside any methods. 
+		Every instance of the class has that variable and can have their own values
+
+	2-Class Variable or Global variable
+		Instance variable with "STATIC" modifier:
+			-that is a variable declared inside class but outside any methods
+			-having "Static " keyword in them.
+			-Every object created of that class will have this variable and 
+				if it is changed in one Object, It is changed for all of them.
+
+	3-Local Variable
+		-Varibale declared inside a method or nested scope
+		-doesn't exist outside of that method or outside of that scope {}.
+		-but is available to nested scopes that is 
+			{int a=5{int "a" is available here}}"a" is not available here.

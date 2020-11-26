@@ -1,0 +1,14 @@
+Array Declaration
+	int [] myArray=new int [3];
+		myArray[0]=2;
+		myArray[1]=3;
+		myArray[2]=7;
+
+			or
+
+	int [] myArray={2,3,7};
+
+Multi Dimentional Array
+	int [][] myArray= new int[3][2];
+		OR
+	int [][] myArray={{2,3},{4,7},{9,3}};
