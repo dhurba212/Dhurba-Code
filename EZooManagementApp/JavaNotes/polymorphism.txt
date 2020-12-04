@@ -1,0 +1,30 @@
+public class Animal{
+	boolean hasFur=false;
+	void Sound()
+	{
+		System.out.println("Animals make weired sounds");
+	}
+}
+
+public class Dog extends Animal{
+	boolean hasFur=true;
+	void Sound()
+	{
+		System.out.pritln("Dog bark.");
+	}
+
+	void Eat()
+	{
+		System.out.println("Dog eat bones");
+	}
+}
+
+public class Example{
+	public static void main(){
+		Animal myDog=new Dog();
+		myDog.Sound() //"Dog bark"- prints Dog overridden method
+		myDog.hasFur  //prints TRUE from Animal because instance variable are called from reference type.
+		myDog.Eat()   //Don't have access to this method because myDog is a Animal Reference Dog Object and
+		              //since Eat() is not available in Animal, it cannot be accessed from Animal referenced object.
+	}
+}

@@ -1,0 +1,26 @@
+String str1=" Abcd fg hkfsdfd GHI"
+
+	Removing whitespace
+		str1.replaceAll("\\s","");
+
+	To lowerCase
+		str1.toLowerCase();
+
+	Convert to Array
+		str1.toCharArray();
+
+	Sort the array
+		Array.sort(str1);
+
+
+
+String str2="adfdhjkl";
+
+	Get Part Of String-substring
+		str2.substring(start index, end index);
+		                               | 
+									if no end index then it will be the end of the string.
+		
+
+
+	

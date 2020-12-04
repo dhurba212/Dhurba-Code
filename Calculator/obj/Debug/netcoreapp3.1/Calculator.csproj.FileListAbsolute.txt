@@ -1,0 +1,13 @@
+C:\Git-PracticeCoding\PracticeCoding\calculator\bin\Debug\netcoreapp3.1\Calculator.exe
+C:\Git-PracticeCoding\PracticeCoding\calculator\bin\Debug\netcoreapp3.1\Calculator.deps.json
+C:\Git-PracticeCoding\PracticeCoding\calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.json
+C:\Git-PracticeCoding\PracticeCoding\calculator\bin\Debug\netcoreapp3.1\Calculator.runtimeconfig.dev.json
+C:\Git-PracticeCoding\PracticeCoding\calculator\bin\Debug\netcoreapp3.1\Calculator.dll
+C:\Git-PracticeCoding\PracticeCoding\calculator\bin\Debug\netcoreapp3.1\Calculator.pdb
+C:\Git-PracticeCoding\PracticeCoding\calculator\obj\Debug\netcoreapp3.1\Calculator.csprojAssemblyReference.cache
+C:\Git-PracticeCoding\PracticeCoding\calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfoInputs.cache
+C:\Git-PracticeCoding\PracticeCoding\calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfo.cs
+C:\Git-PracticeCoding\PracticeCoding\calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.CoreCompileInputs.cache
+C:\Git-PracticeCoding\PracticeCoding\calculator\obj\Debug\netcoreapp3.1\Calculator.dll
+C:\Git-PracticeCoding\PracticeCoding\calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
+C:\Git-PracticeCoding\PracticeCoding\calculator\obj\Debug\netcoreapp3.1\Calculator.genruntimeconfig.cache

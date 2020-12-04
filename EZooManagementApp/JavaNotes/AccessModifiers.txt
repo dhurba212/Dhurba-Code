@@ -1,0 +1,32 @@
+Access Modifiers
+	-Keywords that control the ability of outside code to access and modify the state and behaviour of a class.
+	-4 types
+		-Public,Protected, Default and Private
+
+		Public
+			-accessed from classes and subclasses within same package and classes and subclasses of other packagaes as well
+
+		Protected
+			-same package and subclasses from other package as well.
+			                     |
+							class B extends A
+
+		Default
+			-same package classes and subclasses
+
+		Private
+			-Only on the same class, NOT EVEN IN SUB CLASS OF THAT CLASS
+
+iMPORTANT NOTES
+	-if you want to expose the data in a class to outside manupulation best to make it private 
+		and provide getter and setter methods.
+			-Getter method returns the value of the variable stored in the object.
+			-Setter method change the value of the variable stored in the object.
+
+If you dont define a constructor, the class will have a default constructor.
+We can have many constructor with different num of parameters or different arguments(Overloading);
+					-Special method which is called during instantiation of class to create object and initialize the values of variables.
+
+
+
+		

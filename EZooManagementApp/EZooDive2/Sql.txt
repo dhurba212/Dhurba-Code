@@ -1,0 +1,111 @@
+DDL-Data Definition Language
+	-Defines Database Structure or Scheme
+		-Create-to create tables and other structures
+			Create Table Customer(
+				CustomerId Integer      Primary Key,
+				fName      Varcahr(30)  Not null,
+				lName      Varchar(30)  Not null,
+				Age        Integer      Check(age>18)
+			);
+			Create Table Customer_phone(
+				CustomerId  Integer   References Customer(CustomerId),
+				Phone       Varchar   not null,
+				Primary Key(CustomerId,Phone)
+			);
+		
+		-Alter
+			Alter Table Customer
+				Add Birthday  Varchar not null;
+							Or Can add multiple column at the same time
+				Add (
+				Birthday  Varchar  Not Null,
+				Race      Varahcar Not Null,
+				);
+
+			Can Modify the data type of a column as well
+
+			Alter Table Customer
+				Modify CustomerId Varchar(30);
+							Or Some SQL use
+				Alter Column CustomerId  Varchar(30)
+
+		-Drop
+			Alter Table Customer
+				Drop Column Birthday;
+		-Rename Table
+			Alter Table Customer
+				Rename To MacysCustomer
+
+		-Rename Column
+			Alter Table Customer
+				Rename Column CustomerId To Customer_ID;
+
+					If that Column is referenced by a foreign key in another table, the foreign key should 
+					automatically change name there as well, but if it doesn't you might have to do it on your own.
+		-Change Constraint
+			if a table has a constraint(I dont know if table does have a constraint, i thought only column can have constraint)?????
+			Alter table Customer
+				Drop Constraint Constraint_name(WHatever the constraint name is)
+				Add Constraint Constraint_name constraint;
+
+DML-Data Manupulative Language
+	-to manage data within tables
+	CRUD-
+		Create(Insert)
+			-Insert into Customer(CustomerId,FName,LName,Phone) Values
+				(1,"Dhurba","Ghimire","123456789";
+				 2,"      ","       ","          ";
+				);
+		Read(Select)
+		Update
+			
+		Delete
+			-Delete from Customer
+				where customerId=1(it will delete a row with customerId =1)
+
+TCL-Transaction Control Language-How DML statements are issued and executed
+	-Set of SQL statement that are executed as a single expression
+	meaning, all will be executed or none will be executed
+
+Column-Each colum can hold single type of data
+		-properties of data the data that a table stores.
+		-for example-In a table of people,column represent People's properties like name, age 
+			rows represent each person.
+Rows-it is an entry.
+	-representation of data in a table
+
+Types of Data a column can hold, Remember each column can hold only one type of data
+	-Varchar
+	-Integer-32bits
+	-Smallint-16bits(for smaller number)
+	-Number(5,2)-for decimal number,(5,2) means total 5 and 2 decimal.i.e up to 3whole number , 2 decimal eg 100.45
+	-Float-floating point number with no limit on digits
+	-Date-date value
+	-Timestamp-combination of date and time
+
+	For each datatype u can have NULL value. Meaning empty
+								NULL doesnt mean zero "0" or empty string "". it literally means nothing.
+
+
+Table Constraints
+	Rules that a are applied to the columns to restrict certain values within it.
+		-Primary Key-a column whose value uniquely idetifies each row. It is unique in each row
+			Composite Key-2 or more columns acting as primary key
+		-Foreign Key-A column in one table that reference to the column in another table
+				Primary and Forign Key forms the backbone or RDBMS.
+		
+		-Unique Key- should be unique in each row.Doesn't necessarily be Pimary key eg email address 
+			no two person can have same email but a person might not have an email.
+		-Not Null-Value Is Requited, cannot be left blank.
+		-Check-a value in this column meets a specific condition
+			eg certain age
+
+
+Normalization-Have 6 or 7 normal form but if we can achieve 3 normal form thats good.
+	Designing a database in such a way that
+		-it doesn't have Composite Columns
+		-Have no redundant data in a table
+		-have relationship that makes sense
+
+
+

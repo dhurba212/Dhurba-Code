@@ -1,0 +1,15 @@
+- usually called DICTIONARY
+-Although it isn't in a hierachy of Collection, it is still considered a collection.
+-Container that store data in key value pair.
+-(Note: -synchronized(an application with multiple processes can access the map at the same time, also called multi-thread))
+-3 types
+	-HashTable -synchronized,     No null key, No null value        if u need synchronized, use this.
+	-HashMap   -not synchronized, 1 null key,  multiple null value  if u dont need synchronized, use this, it is fastest
+	-TreeMap-HashMap but sorted.  no null key, multiple null value  if u dont need synchronized  but need sorted, use this
+
+-Methods: main 4 methods
+	- .put(key,value) will add it to dictionary
+	- .get(key)       will get value from dictionary that matches the key
+	- .remove(key)    will remove that key value from dictionary
+	- .keySet()       will get list of all keys only in the dictionary
+	- .values()       will get list of all values only in the dictionary

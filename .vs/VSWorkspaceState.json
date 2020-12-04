@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EZooManagementApp",
+    "\\EZooManagementApp\\JavaNotes",
+    "\\EZooManagementApp\\JavaNotes\\Collection"
   ],
-  "SelectedNode": "\\BankAccount",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\EZooManagementApp\\JavaNotes\\Collection\\Collection Methods.PNG",
+  "PreviewInSolutionExplorer": true
 }

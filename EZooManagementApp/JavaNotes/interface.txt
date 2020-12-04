@@ -1,0 +1,52 @@
+-every methods inside interface is abstract, but you dont write abstract infront of method,
+	u just write public void and dont write any code.
+		-But since "JAVA8" they can have default method as well, which are already implemented and the 
+		 class that implements the interace dont need to implement that default method but they can override them.
+			
+			eg: public Interface Doable{
+					default void DoThings(){
+						System.out.println("Can do things.");
+					}
+				}
+
+		- Interfaces are also allowed to have static Methods with definition(already implemented). Static Method can 
+		   only call other static method or (access other methods through local reference variable??????????)
+
+
+-every instance variable inside Interface is PUBLIC, STATIC and FINAL. that is they can't be changed and are constant
+ across every class that implements that Interface.
+	But inside default method a local variable can be written(doesn't need to be static and final).
+	Also Default Methods inside an Interface can call other methods(abstract or default)
+	eg 
+	public interface Domesticated{
+		(public static final) int legs=2;
+		          |
+			U don't need to write Public static final, they are by default Public Static and Final
+
+		public void Eat();
+
+		default void Behaviour(){
+			boolean friendly=true; //local variable inside Default method doesn't have to be public static and final.
+			int things=0;          //local variable inside Default method doesn't have to be public static and final.
+			System.out.println("Are friendly? "+friendly);
+
+			Eat();//although Eat method is abstract right now, the class that extend it will have guaranteed implementation.
+		}
+	}
+
+	class Animal implements Domesticated {
+		public void Eat()
+		{
+			System.out.println("Every Domesticate animal eat food");
+		}
+	}
+
+-an Interface can extend many other interfaces but cannot extend classes.
+	public Interface LivingThings{
+		public void Breathe();
+	}
+	eg public interface Domesticated extends LivingThings{
+		
+	}
+
+	
