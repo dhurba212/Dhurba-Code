@@ -1,0 +1,40 @@
+CREATING COMPONENT IN ANGULAR(from terminal ng generate component componentName)
+  -3 steps
+    -1:create a class inside .ts file and convert that class to a angular component
+        to convert a class into component
+          -import {Component } from '@angular/core'
+          -@Component({
+            selector:'courses', // it is a id for this component. whereever we use this "element", it will render its template.
+            template:'<h2>Courses</h2>' // usually we have this template(html for this component) in a separate file and we provide location templateUrl:'./course.component.html'
+            //styleUrl:['./course.component.css'] //use this when we hava a separate page for styling
+
+            })
+
+      -2:add this component to the app module.
+          inside app.module.ts we have @NgModule({ declarations:[AppComponent,CourseComponent]}) //CourseComponent is added
+            when we add that component inside @NgModule, that component will be automatically imported at the top of app.modile.ts as import {CourseComponent} from './course.component'
+
+      -3 call that component in html of app as <course></course>
+
+
+Angular FOr loop
+
+class CourseComponent{
+  title='list of Courses';
+  courses=['Math','Science','English'];
+}
+
+in template:
+`<h2>{{title}}</h2>
+<ul>
+  <li *ngFor='let course of courses'>{{course}}</li>
+</ul>
+`
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+jsp actions <%  %> are custom tags that allows you to bind java code in jsp.
+ jstl-java standard tag library-
+	-common set of functions and tools that can be used to eliminate most common scriplet code in jsp.
+	-there are 5 jstl libraries
+		-the most common one is core.

@@ -1,0 +1,21 @@
+JSP
+	-java server page
+	-it contains html with java code
+	-it is a wrapper  around servlet, which gets compiled into a servlet.
+	-jsp has a container which manages its lifecycle
+		-1st converted into servlet class by the container
+		-2nd gets compiled to bytecode
+		-3rd gets loaded
+		-4th instantiated
+
+		-5 jsp_init()
+		-6 jsp_service()
+		-7 jsp_destroy()
+
+	-when first http request is sent, jsp goes through
+		lifecycle 1-6.
+		during 2nd Http request, jsp is already a full-fledged servlet and ready for step 6 service();
+
+
+	
+

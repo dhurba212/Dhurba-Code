@@ -61,11 +61,19 @@ DML-Data Manupulative Language
 			
 		Delete
 			-Delete from Customer
-				where customerId=1(it will delete a row with customerId =1)
+				where customerId=1(it will delete a row with customerId =1
+				)
 
 TCL-Transaction Control Language-How DML statements are issued and executed
 	-Set of SQL statement that are executed as a single expression
 	meaning, all will be executed or none will be executed
+
+	-Commit-Usually changes are Auto-Committed but you can set it to "SET AUTOCOMMIT OFF" and Manually Commit everytime you make changes.
+	-Savepoint -Snapshot of the database at that point in time.
+				-Create savepoint before u do any changes, so u can go back to that point in case of any errors
+				-Can create several savepoints.
+	-Rollback-If you realized you made errors while commiting a transaction, u can rollback to the savepoints that u have created
+		once you rollback to a savepoint, U can't undo that rollback and go forward.
 
 Column-Each colum can hold single type of data
 		-properties of data the data that a table stores.

@@ -1,0 +1,5 @@
+Directive
+  Something that adds or remove something in a dom
+  starts with *
+    eg *ngFor  //it acts similar to loop
+    <li *ngFor='let course in courses'>{course}</li>

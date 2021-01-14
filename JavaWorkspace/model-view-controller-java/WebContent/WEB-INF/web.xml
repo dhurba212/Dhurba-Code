@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>displayStudent</servlet-name>
+		<servlet-class>servlet.DisplayStudentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>displayStudent</servlet-name>
+		<url-pattern>/displayStudent</url-pattern>
+	</servlet-mapping>
+	
+
+
+
+</web-app>

@@ -1,9 +1,0 @@
--we will start from backend and move to frontend.
-	1-Sql- design relational database
-		Diagrams describing its structure
-		tables and their relation to each other
-
-	2-Connect our Sql Database to java
-		JDBC
-	3-Code Data Access Layer
-		it will allow our code to access the database

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+
+    </head>
+    <body>
+
+        <header>
+            <p>THis is the head. I am the header.</p>
+        </header>
+        <h1>Learning Html</h1>
+        <!-- THis is the comment
+        div is block element while span is inline element allows
+        other inline element to be in it untill it covers the whole width.
+        -->
+
+
+        <div>THis is block element</div>
+        <span> this is inline element allows othe inline element until it covers the whole width</span>
+        <span>i am a inline element </span>
+        <span>I an 2nd span</span>
+        
+        <div>
+            <h2>Semantic Elements-</h2>
+            <p> Do not visualy affet webpage but are used to organize the page</p>
+            <p>Eg-header,nav,section,article,aside,footer</p>
+        </div>
+
+        <div>
+            <h2>Anchor tag</h2>
+            <p>a with attribute, href="link" and target="_blank"</p>
+            <p>target=_blank will open link in new window, "_self" is default and same window</p>
+            <p>Link can be in the same page further down or up using id. i.e href="#id" </p>
+            <p>
+                if we use href="www.google.com #id" will open google page at
+                particular section of page with that id.
+            </p>
+            <p>Hello </p>
+            <p><a href="www.google.com">google</a></p>
+            <p><a href="www.goodsfsadf234234213.com">goolge</a></p>
+
+        </div>
+        <div>
+            <h2>Table</h2>
+            <p>Table has tags: table,tr and td</p>
+            <p>caption tag can be used right below opening table tag to give a title or description to table.</p>
+            <p>we can use th instead of td for header</p>
+            <p>rowspan and colspan is used for td(th) only</p>
+            <p>rowspan="3" mean it extends 3 rows colspan="2"span 2 columns</p>
+        </div>
+        <div>
+            <h2>List</h2>
+           
+            <p>ol,ul and li-for list item</p>
+            <p> we can use type="A", "a","I","i" to change the list
+            number to A,B,C or a,b,c or Roman I,II,III or i,ii,iii. Default is 1,2,3</p>
+            <p>we can put a whole ol or ul list inide a li of another list: eg</p>
+            <ol type="I">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3
+                    <ol type="a">
+                        <li>nesed 1</li>
+                        <li>nested 2</li>
+                    </ol>
+                </li>
+                <li>item 4</li>
+            </ol>
+        </div>
+
+        <div>
+            <h2>Form</h2>
+            <!-- use post method for sensitive data, use get method if u want that form data to be able to be bookmarked-->
+            <form action="servletpage" method="post">
+                <fieldset>
+                    <legend>User Credientials</legend>
+                    <label for="user">Username:</label>
+                    <input id="user" name="username" type="text" /><br />
+
+                    <label>Password: <input type="password" name="password" /></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>User Other Information</legend>
+                    <label>Date Of Birth:<input type="date" name="dateofbirth" /></label><br />
+                    
+                    <label for="st">State</label>
+                    <select name="state" id="st">
+                        <option value="ny">Ny</option>
+                        <option value="va">Va</option>
+                        <option value="oh">Oh</option>
+                        <option value="ma">Ma</option>
+
+                    </select><br />
+                    <label>Zipcode:<input name="zipcode" type="text" maxlength="5"/></label>
+                </fieldset>
+               
+
+
+
+            </form>
+        </div>
+        
+
+    </body>
+</html>

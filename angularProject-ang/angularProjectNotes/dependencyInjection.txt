@@ -1,0 +1,44 @@
+DEPENDENCY INJECTION
+  -instructing angular to inject dependency of the component into its constructor.
+  -Dont forget to add the provider class of dependency into provider of app.module
+
+When a Componennt is dependent on class Service,
+  eg class CourseService
+  {
+    getCourses()
+    {
+      return ["Math","Science","English"];
+    }
+  }
+
+  if we need to use this getCourse method in a COmponent then we can do as following
+
+    class CourseComponent
+    {
+      courses;
+
+      constructor()
+      {
+        let service = new CourseService()//creating object of CourseService to use its method getCourse().
+                                          //Here CourseCOmponent is dependent on COurseService and if CourseService
+                                          //add a parameter in future, it will create problem here, to avoid that we decouple that dependency by passing that into constructor
+        this.courses=service.getCourse();
+      }
+    }
+
+
+    A better way to do the same is:
+      Here using the dependent Class(dependency)CourseService on Constructor,
+        we are telling Angular to create an object of CourseService and pass it to CourseComponent
+         doing so will decouple CourseComponent from future changes to CourseService.
+
+
+    class CourseComponent
+    {
+      courses;
+
+      constructor(service:CourseService)
+      {
+        this.courses=service.getCourses();
+      }
+    }

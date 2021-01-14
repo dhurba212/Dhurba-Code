@@ -1,0 +1,43 @@
+JDBC
+	-Java Database Cnnectivity API
+		-need to download JDBC (https://jdbc.postgresql.org/download.html)
+		-right-click on the java project that u are working, => BUlDPATH=>CONFIGURE BUILD PATH=>LIBRARIES=>ADD EXTERNAL JAR=>
+			GO TO THE PLACE WHERE U HAVE SAVED THE DOWNLOADED JDBC=>CLICK TO ADD=>APPLY AND CLOSE
+								|
+	(Application Programming Interface is a software intermediary that allows two application to talk to each other);
+		
+		-JDBC is used to connect to the database
+		-it is used to exchange data with database
+		-JDBC is database independent meaning it can be used with various databases
+
+	-We will follow folling steps 
+		-Use basic classes of the api to get info from database
+
+			-forName method of the CLASS class to load the driver
+				Class.forName("org.postgresql.Driver");
+			-Use Connection Class to connect to the database
+			-Method that return connection.
+			public Connection getConnection()throws ClassNotFoundConnection,SQLException
+				{
+					Class.getName("org.postgresql.Driver")
+
+					private String url="jdbc:postgresql://localhost:5432/eZoo";5432 is the port,eZoo is the name of the database in postgresql.
+					private String username="postgres";//username for postgresSql 
+					private String password="........";//password for postfresSql
+					Connection conn= DriverManager.getConnection(url,username,password);
+					return conn;
+				}
+
+
+		JDBC STATEMENT- to perform simple operation on SQL database
+			-3 types 
+				-statement
+				-PreparedStatement- we will use this because it helps protect against malicious attack called SQL injection.
+				-callable statement
+
+
+				
+
+
+
+

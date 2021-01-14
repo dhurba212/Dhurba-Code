@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ERD is the most important diagram for any major piece of software
+        Given ERD a sofware developer can determine most of the structure of an application.
+     -->
+     
+    <title>Entity Relational Diagram</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        table{
+            border:solid;
+            border-spacing:5px;
+        }
+        th,td{
+            padding-left:10px;
+        }
+        div {
+            
+            
+        }
+            div table {
+                align-content: center;
+                margin-right: 100px;
+                float: left;
+            }
+    </style>
+
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Feeding Schedules</th>
+                    <!--
+                    <th>schedule_ID </th>
+                 <th>feeding_time</th>
+                 <th>recurrence</th>
+                 <th>food</th>
+                 <th>notes</th>
+                -->
+                </tr>
+
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>PK</td>
+                    <td>schedule_ID</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>feeding_time</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>recurrence</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>food</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>notes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Animal Table</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PK</td>
+                    <td>animalid</td>
+                </tr>
+                <tr>
+                    <td>FK</td>
+                    <td>feeding_schedule</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>name</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>taxkingdom</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>taxphylum</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>taxclass</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>taxorder</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>taxfamily</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>taxgenus</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>taxspecies</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>height</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>weight</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>type</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>healthstatus</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+   
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+position
+	-layout for an element
+		-4 values
+			-absolute
+				sets the element relative to its parent
+				or relative to document body if the parent position is not defined in which case it is static.
+				eg <div>
+						<p>Hello i am dhurba</p>
+					</div>
+
+					div{
+						position:relative;
+						top:0;
+						left:0;
+						height:150px;
+						width:100%;
+						background:cyan;
+					}
+					p{
+						position:absolute;
+						bottom:0;
+						right:0;
+					}
+
+			-relative
+				relative to its normal flow, better to set top and left values
+				eg:position:relative; top:10px;left:100px; height:150px;width:100px
+			-fixed
+				fixed on window, will scroll along with the window
+				eg: div{
+					postiton:fixed;
+					top:0;
+					width:100px;
+					height:150px;
+					background:brown;
+				}
+			-static(default)
+
+Specifying position
+		-Once you choose the postiton, u need to choose postiton against which side
+			-left,right,top,bottom
+
+z-index
+	-higher values is display in front
+	-can be 0,-ve or +ve;
+
+float
+	-set an element to the left or right of its container
+	eg:
+	<div> width:100%;overflow:visible
+		<div class="left">  float:left
+			<p >this will float left</p>
+		</div>
+		<div  class="right"> float:right
+			<p>this will float right</p>
+		</div>
+		
+	</div>
+
+overflow
+	how to display the content that doesnt fit in the container
+		-auto
+		-hidden
+		-visible
+		-scroll
+
+
+Table
+	-border:2px solid black
+	-border-collapse:separate;//separate each cell. if it is collapse, dont have spacing between each cell
+	-border-spacing:2px(horizontal) 3px(vertical)//spacing betweeen each cell inside table
+		//for border-spacing to work, border-collapse should be separate;
+	-empty-cells:show or hide
+	-caption-side:top or bottom  //if you have caption for the table, u can place it accordingly, default is top.some browser support left and right as well.
+	td,th{
+		border:1px solid black;
+	}
+
+List
+	list-style-position:outside(outside of border),inside(inside of border)
+	list-style-type:decimal(1,2,3),lower-alpha(a,b,c),upper-alpha(A,B,C)
+	list-style-image:url("lightning.jpg");//u can use image as bullet point as well for ul.
+
+Link(<a>)
+	-a:active{color:orange;background:beige}
+	-a:hover{color:dark}
+	-a:visited{color:cyan}
+	-a:link{color:blue;text-decoration:none}//default
+
+	a{text:decoration:none}
+
+	
+
+
+	
+

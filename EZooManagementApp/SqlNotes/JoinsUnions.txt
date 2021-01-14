@@ -1,0 +1,7 @@
+Joins are horizontal while unions are vertical arrangement of columns from different tables
+joins can be inner, left, right, outer
+
+UNIONS has 2 select statement with union in betwen.
+	- must follow 2 rules
+		both select statement should have same number of columns
+		and the type of columns should match.

@@ -1,0 +1,20 @@
+-Different Database has different ways to create function
+	besides the one that are already provided like SUM,COUNT,AVG,MIN,MAX.
+
+-Although Different Database may differ but most of them follow following pattern
+
+	CREATE FUNCTION function_name(Input1 type, Input2 type)
+	RETURN return_type(eg integer or Varchar)
+	BEGIN
+		//Write logic
+
+		RETURN value;
+	END
+
+-For Date and Time
+	-PostgreSql: now(), PostgreSql also has Current_Timestamp so it can interpret code written for
+		Oracle Database but the format of date and time might be different
+	-Oracle:     Current_Timestamp
+
+
+

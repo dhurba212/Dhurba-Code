@@ -1,0 +1,168 @@
+// in terminal once you have your .ts file ready, tsc main.ts(will compile .ts to .js) AND node main.js(call this main.js to run your code and see it in terminal)
+
+Typescript encapsulates Javascript. which means it has all
+  the features of Javascript and more.
+   -typescript has object oriented features like
+      constructor, classes, fields, properties etc which js dont.
+    -typescript gets compiled so we can catch compile time errors.
+    -since some of the browsers dont support typescript yet, typescript gets transpile to javascript that browers understand.
+
+Features of Typescript that we dont have in javascript
+  -2 ways to declare variable
+    var or let(let is now in es6)
+      var is scoped to nearest function.
+      let is blocked scope, not function.
+
+      Declaring variable in typescript;
+        let a:number; or just write let a=5; if you know the value of a;
+          if you dont write :number, then if u declare its value later to a=5; and then a="dhurba", there will be no error.
+
+      In typescript we have
+        let a:number;
+        let b:boolean;
+        let c:string;
+        let d:any;
+        let e: number[]=[1,2,3,4]//array of number
+        let f:any[]=[1,true,"dhurba"]//any means it can hold any type of variable, not a good practice though but its possible.
+
+        enum Color ={red=0,blue=1,green=2}
+        let backgroundColor=Color.red;
+
+  Type Assertion
+    let message;//this message is of type "any";
+      message="abc";//although message is now a string, typescript still treat it as "any";
+        let endsWithC= message.endsWith('c');//its true. when we type message. , typescript wont give u intellescence for string because it still recognize message as any.
+          so to fix that
+            let endsWithC = (<string>message). , now the typescript will provide intellescence with all the function for string.
+              or
+            let endsWithC = (message as string).endsWith('c');
+
+  Arrow Function
+    let log= function(message)
+              {
+                console.log(message);
+
+               }
+
+               OR
+    let log = (message)=>console.log(message);
+
+  Creating Class and INterface in Typescript
+
+    class Point
+    {
+      x:number;
+      y:number;
+
+      constructor(x:number,y:number)
+      {
+        this.x=x;
+        this.y=y;
+      }
+
+      draw()
+      {
+        console.log("x: "+this.x + ", y: "+this.y);
+      }
+
+      getDistance(another:Point) //passed a point object as a parameter
+      {
+        //code here
+      }
+    }
+
+    INTERFACE are for declaration not implementation
+      interface Point
+      {
+      x:number,
+      y:number,
+      draw:()=>void  //it is a function that takes no parameters and returns void
+      }
+
+      Creating Object Of Class Point.
+      if we dont have a constructor this is how we create object and initialize value of x and y
+        let point:Point = new Point(); Or let point = new Point();//created an object of Point class
+          point.x=2;
+          point.y=3;
+          point.draw(); //called method draw for that object point.
+
+    If we have a constructor inside a class then we can create object and initialize value of x and y there;
+      let point:Point= new Point(2,3);//created object of point
+
+      point.draw()  // called method draw for the object point.
+
+  CONSTRUCTOR
+    -we can initialize variable with constructor while creating an object.
+    -similar to java, but we can only have one constuctor.
+      
+        eg
+        class Point
+        {
+          let x:number;// we can use access modifier public, private, protected
+          let y:number;// eg private y:number; private x:number;
+
+          constructor(x:number, y:number)
+          {
+          this.x=x;
+          this.y=y;
+          }
+        }
+
+        if we need two constructor there is a way around
+          class Point
+          {
+            private x:number;
+            private y:number;
+
+            constructor(x?:number,y?:number)// ? means we can create object without initializing value of x and y;
+            {
+            this.x=x;
+            this.y=y;
+            }
+          }
+
+        We can write this above variable and constructor much cleaner
+          class Point
+          {
+            //dont need to declare vaiable here, can do it directly inside constructor
+
+            constructor(private x?:number,private y?:number)
+            {
+             //dont need to initialize x and y here, it will be automatically done. will have same name as parameter
+            }
+          }
+
+
+      GETTER and SETTER method
+        class Point
+        {
+          constructor(private x?:number, private y?:number)
+          {
+          }
+
+          getX()                 // or we can do get X(){ return this.x}. since X is capital, the best practice is change private x?: number to private _x?:number and get X to get x
+                                 // getX() is a method, but "get x" is a property
+          {
+            return this.x;
+          }
+
+          setX(value)
+          {
+          this.x=value;
+          }
+
+          getY()
+          {
+            return this.y;
+          }
+
+          setY(value)
+          {
+          this.y=value;
+          }
+        }
+
+
+  CREATING COMPONENT IN ANGULAR
+
+

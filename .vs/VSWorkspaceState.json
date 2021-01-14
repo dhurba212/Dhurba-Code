@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\EZooManagementApp",
-    "\\EZooManagementApp\\JavaNotes",
-    "\\EZooManagementApp\\JavaNotes\\Collection"
+    "\\EZooManagementApp\\SqlNotes",
+    "\\GitNotes",
+    "\\javaNotes",
+    "\\Resume"
   ],
-  "SelectedNode": "\\EZooManagementApp\\JavaNotes\\Collection\\Collection Methods.PNG",
+  "SelectedNode": "\\EZooManagementApp\\SqlNotes\\Sql.txt",
   "PreviewInSolutionExplorer": true
 }

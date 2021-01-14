@@ -1,0 +1,7 @@
+Java has 2 editions
+	1-jave SE java standard edition 
+		-it is a java development kit (jdk) that consist of
+			1-Development Tools(java compiler(javac.exe) and java interpreter(java.exe))
+			2-Java Runtime Environment(JRE)- consist of Java Virtual Machine(JVM) which executes java application using specific libraries and files provided by JRE.
+				JVM is the actual runtime in which java application executes.
+	2-Java EE jave Enterprise Edition

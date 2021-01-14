@@ -1,0 +1,15 @@
+We use service to get something from the server
+  -its just a typescript written as courses.service.ts
+  -we dont need to change this to a component, its simply a class
+
+  //no component, service is plain typescript class
+  export class CoursesService {
+
+    getCourses()
+    {
+      return ["Math","science","english"];// just an example, in real world we get this list from database
+    }
+  }
+
+  now we can use this method in other components to get the list of courses.
+
